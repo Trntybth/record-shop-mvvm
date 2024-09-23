@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="album"
+            type="com.northcoders.record_shop_application.model.Album" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="@{album.title}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TITLE NAME" />
+
+        <TextView
+            android:id="@+id/artistView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{album.artist}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/titleView"
+            tools:text="ARTIST NAME" />
+
+        <TextView
+            android:id="@+id/releaseYearView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{album.releaseYear}"
+            app:layout_constraintStart_toStartOf="@id/artistView"
+            app:layout_constraintTop_toBottomOf="@id/artistView"
+
+            tools:text="RELEASE YEAR" />
+
+        <TextView
+            android:id="@+id/genreView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{album.genre}"
+            app:layout_constraintStart_toStartOf="@id/releaseYearView"
+            app:layout_constraintTop_toBottomOf="@id/releaseYearView"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="75dp"
+            tools:text="GENRE" />
+
+        <TextView
+            android:id="@+id/stockTrackView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{album.stockTracker}"
+            app:layout_constraintStart_toStartOf="@id/genreView"
+            app:layout_constraintTop_toBottomOf="@id/genreView"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="75dp"
+            tools:text="STOCK TRACKER" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RecordShopFE" parent="Theme.Material3.DayNight.NoActionBar">
+<!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--                <item name="colorPrimary">@color/deep_purp</item>-->
+<!--                <item name="colorSecondary">@color/bluey</item>-->
+<!--                <item name="colorTertiary">@color/piunk</item>-->
+    </style>
+
+    <style name="Theme.RecordShopFE" parent="Base.Theme.RecordShopFE" />
+</resources>
+
+
+
+
+
+
